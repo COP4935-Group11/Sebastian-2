@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0.00123">
+    <testcase classname="AddContact" name="Add Contact" time="0.00123">
+        <failure message="The scenario has pending or undefined step(s)"><![CDATA[Given I am on contactology..................................................undefined
+When I login to contactology................................................undefined
+And I add contact...........................................................undefined
+Then I should see contact on contactlist....................................undefined
+]]></failure>
+    </testcase>
+</testsuite>

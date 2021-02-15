@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/PCTE-Similar1"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="GROOVY_DSL_SUPPORT"/>
+	<classpathentry kind="con" path="GROOVY_SUPPORT"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/NRE Jars/com.kms.katalon.composer.integration.cucumber_1.0.0.202012231052.jar"/>
+	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/NRE Jars/com.kms.katalon.core_custom.jar"/>
+	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/NRE Jars/com.kms.katalon.core.cucumber_1.0.0.202012231052.jar"/>
+	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/NRE Jars/com.kms.katalon.util_1.0.0.202012231052.jar"/>
+	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/NRE Jars/cucumber.eclipse.editor_0.0.23.202007130330.jar"/>
+	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/NRE Jars/cucumber.eclipse.steps.integration_0.0.23.202007130330.jar"/>
+	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/NRE Jars/cucumber.eclipse.steps.jdt_0.0.23.202007130330.jar"/>
+	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/NRE Jars/groovy-xml-3.0.4.jar"/>
+	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/NRE Jars/io.cucumber.core_3.0.2.jar"/>
+	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/NRE Jars/io.cucumber.datatable_1.0.3.jar"/>
+	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/NRE Jars/io.cucumber.datatable-dependencies_1.0.3.jar"/>
+	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/NRE Jars/io.cucumber.expressions_5.0.19.jar"/>
+	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/NRE Jars/io.cucumber.gherkin_5.0.0.jar"/>
+	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/NRE Jars/io.cucumber.html_0.2.7.jar"/>
+	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/NRE Jars/io.cucumber.java_3.0.2.jar"/>
+	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/NRE Jars/io.cucumber.junit_3.0.2.jar"/>
+	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/NRE Jars/io.cucumber.tag-expressions_1.1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/NRE Jars/jaxb-api-2.2.3.jar"/>
+	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/NRE Jars/org.apache.commons.io_2.4.0.jar"/>
+	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/NRE Jars/org.apache.commons.lang3_3.6.0.jar"/>
+	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/NRE Jars/run_config_fixed.jar"/>
+	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/NRE Jars/selenium-server-standalone-3.141.59.jar"/>
+	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/Katalon Jars/testng-6.11.jar"/>
+	<classpathentry kind="lib" path="/Applications/Eclipse.app/Contents/Eclipse/plugins/org.codehaus.groovy_3.0.7.v202012311456-e2012-RELEASE/lib/groovy-3.0.7-indy.jar" sourcepath="/Applications/Eclipse.app/Contents/Eclipse/plugins/org.codehaus.groovy_3.0.7.v202012311456-e2012-RELEASE/lib/groovy-3.0.7-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.codehaus.groovy_3.0.7.v202012311456-e2012-RELEASE/lib/groovy-3.0.7-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/sebastiangilarranz/.m2/repository/commons-cli/commons-cli/1.4/commons-cli-1.4.jar" sourcepath="/Users/sebastiangilarranz/.m2/repository/commons-cli/commons-cli/1.4/commons-cli-1.4-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="commons-cli"/>
+			<attribute name="maven.artifactId" value="commons-cli"/>
+			<attribute name="maven.version" value="1.4"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

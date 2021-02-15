@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuites failures="5" name="Smoke" tests="5" time="0.014806"><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0.000735">
+    <testcase classname="VerifyContacts using User001" name="Verify Contacts" time="0.000735">
+        <failure message="The scenario has pending or undefined step(s)"><![CDATA[Given I am on contactology..................................................undefined
+When I login to contactology................................................undefined
+Then I should see existing contacts.........................................undefined
+]]></failure>
+    </testcase>
+</testsuite><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0.010119">
+    <testcase classname="Register to Contactology" name="Register" time="0.010119">
+        <failure message="The scenario has pending or undefined step(s)"><![CDATA[Given I am on contactology..................................................undefined
+When I register to contactology.............................................undefined
+Then I should have access to dashboard......................................undefined
+]]></failure>
+    </testcase>
+</testsuite><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0.00123">
+    <testcase classname="AddContact" name="Add Contact" time="0.00123">
+        <failure message="The scenario has pending or undefined step(s)"><![CDATA[Given I am on contactology..................................................undefined
+When I login to contactology................................................undefined
+And I add contact...........................................................undefined
+Then I should see contact on contactlist....................................undefined
+]]></failure>
+    </testcase>
+</testsuite><testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="0.002722">
+    <testcase classname="Login to Contactology" name="Login" time="0.001458">
+        <failure message="The scenario has pending or undefined step(s)"><![CDATA[Given I am on contactology..................................................undefined
+When I login to contactology................................................undefined
+Then I should have access to dashboard......................................undefined
+]]></failure>
+    </testcase>
+    <testcase classname="Login to Contactology" name="Logout" time="0.001264">
+        <failure message="The scenario has pending or undefined step(s)"><![CDATA[Given I am on contactology..................................................undefined
+And I login to contactology.................................................undefined
+When I logout of contactology...............................................undefined
+Then I should no longer have access to dashboard............................undefined
+]]></failure>
+    </testcase>
+</testsuite></testsuites>

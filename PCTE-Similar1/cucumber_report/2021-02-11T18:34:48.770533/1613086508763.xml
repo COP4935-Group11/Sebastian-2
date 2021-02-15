@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="9.643237">
+    <testcase classname="AddContact" name="Add Contact" time="9.643237">
+        <failure message="java.lang.AssertionError&#10;&#9;at org.junit.Assert.fail(Assert.java:87)&#10;&#9;at org.junit.Assert.fail(Assert.java:96)&#10;&#9;at com.ucf.pcte.Webui.verifyElementPresent(Webui.java:97)&#10;&#9;at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:318)&#10;&#9;at edu.ucf.irl.Add_Delete_Contact.seeContact(Add_Delete_Contact.groovy:25)&#10;&#9;at ✽.I should see contact on contactlist(/Users/sebastiangilarranz/Desktop/Sebastian/PCTE-Similar1/Include/features/Add_Contact/AddContact.feature:7)&#10;"><![CDATA[Given I am on contactology..................................................passed
+When I login to contactology................................................passed
+And I add contact...........................................................passed
+Then I should see contact on contactlist....................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.fail(Assert.java:96)
+	at com.ucf.pcte.Webui.verifyElementPresent(Webui.java:97)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:318)
+	at edu.ucf.irl.Add_Delete_Contact.seeContact(Add_Delete_Contact.groovy:25)
+	at ✽.I should see contact on contactlist(/Users/sebastiangilarranz/Desktop/Sebastian/PCTE-Similar1/Include/features/Add_Contact/AddContact.feature:7)
+]]></failure>
+    </testcase>
+</testsuite>

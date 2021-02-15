@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="5.511544">
+    <testcase classname="Register to Contactology" name="Register" time="5.511544">
+        <failure message="org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//a[@id='CreateAccountButton']&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'&#10;System info: host: 'Sebastians-MacBook-Pro.local', ip: 'fe80:0:0:0:c66:550c:79b:631b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '15.0.1'&#10;Driver info: driver.version: RemoteWebDriver&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#10;&#9;at com.ucf.pcte.Webui.click(Webui.java:59)&#10;&#9;at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:318)&#10;&#9;at edu.ucf.irl.Register.IRegister(Register.groovy:12)&#10;&#9;at ✽.I register to contactology(/Users/sebastiangilarranz/Desktop/Sebastian/PCTE-Similar1/Include/features/Register/Register-success.feature:5)&#10;"><![CDATA[Given I am on contactology..................................................passed
+When I register to contactology.............................................failed
+Then I should have access to dashboard......................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//a[@id='CreateAccountButton']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'Sebastians-MacBook-Pro.local', ip: 'fe80:0:0:0:c66:550c:79b:631b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '15.0.1'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.ucf.pcte.Webui.click(Webui.java:59)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:318)
+	at edu.ucf.irl.Register.IRegister(Register.groovy:12)
+	at ✽.I register to contactology(/Users/sebastiangilarranz/Desktop/Sebastian/PCTE-Similar1/Include/features/Register/Register-success.feature:5)
+]]></failure>
+    </testcase>
+</testsuite>

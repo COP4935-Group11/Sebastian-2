@@ -1,0 +1,48 @@
+import com.kms.katalon.core.configuration.RunConfiguration
+import com.ucf.pcte.Webui as WebUI
+import com.ucf.pcte.CucumberKW
+
+
+
+
+
+/**
+ * Some methods below are samples for using SetUp/TearDown in a test suite.
+ */
+
+/**
+ * Setup test suite environment.
+ */
+@SetUp(skipped = true) // Please change skipped to be false to activate this method.
+def setUp() {
+	// Put your code here.
+}
+
+/**
+ * Clean test suites environment.
+ */
+@TearDown(skipped = true) // Please change skipped to be false to activate this method.
+def tearDown() {
+	// Put your code here.
+}
+
+/**
+ * Run before each test case starts.
+ */
+@SetupTestCase(skipped = true) // Please change skipped to be false to activate this method.
+def setupTestCase() {
+	// Put your code here.
+}
+
+/**
+ * Run after each test case ends.
+ */
+@TearDownTestCase(skipped = true) // Please change skipped to be false to activate this method.
+def tearDownTestCase() {
+	// Put your code here.
+}
+
+/**
+ * References:
+ * Groovy tutorial page: http://docs.groovy-lang.org/next/html/documentation/
+ */

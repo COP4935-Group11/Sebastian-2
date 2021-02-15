@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0.00236">
+    <testcase classname="AddContact" name="Add Contact" time="0.00236">
+        <failure message="java.lang.Error: Unresolved compilation problem: &#10;&#9;options cannot be resolved to a variable&#10;&#10;&#9;at com.ucf.pcte.Webui.openBrowser(Webui.java:25)&#10;&#9;at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:318)&#10;&#9;at edu.ucf.irl.Login.goToWebsite(Login.groovy:16)&#10;&#9;at ✽.I am on contactology(/Users/sebastiangilarranz/Desktop/Sebastian/PCTE-Similar1/Include/features/Add_Contact/AddContact.feature:4)&#10;"><![CDATA[Given I am on contactology..................................................failed
+When I login to contactology................................................skipped
+And I add contact...........................................................skipped
+Then I should see contact on contactlist....................................skipped
+
+StackTrace:
+java.lang.Error: Unresolved compilation problem: 
+	options cannot be resolved to a variable
+
+	at com.ucf.pcte.Webui.openBrowser(Webui.java:25)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:318)
+	at edu.ucf.irl.Login.goToWebsite(Login.groovy:16)
+	at ✽.I am on contactology(/Users/sebastiangilarranz/Desktop/Sebastian/PCTE-Similar1/Include/features/Add_Contact/AddContact.feature:4)
+]]></failure>
+    </testcase>
+</testsuite>

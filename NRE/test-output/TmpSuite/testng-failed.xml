@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TmpSuite]">
+  <test name="/Users/sebastiangilarranz/Desktop/Sebastian/PCTE-Similar1/Scripts/Register/Script1611241895950.groovy(failed)">
+    <parameter name="path" value="/Users/sebastiangilarranz/Desktop/Sebastian/PCTE-Similar1/Scripts/Register/Script1611241895950.groovy"/>
+    <classes>
+      <class name="console.RunScript">
+        <methods>
+          <include name="runScript" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- console.RunScript -->
+    </classes>
+  </test> <!-- /Users/sebastiangilarranz/Desktop/Sebastian/PCTE-Similar1/Scripts/Register/Script1611241895950.groovy(failed) -->
+  <test name="/Users/sebastiangilarranz/Desktop/Sebastian/PCTE-Similar1/Scripts/Login/Script1611188057074.groovy(failed)">
+    <parameter name="path" value="/Users/sebastiangilarranz/Desktop/Sebastian/PCTE-Similar1/Scripts/Login/Script1611188057074.groovy"/>
+    <classes>
+      <class name="console.RunScript">
+        <methods>
+          <include name="runScript" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- console.RunScript -->
+    </classes>
+  </test> <!-- /Users/sebastiangilarranz/Desktop/Sebastian/PCTE-Similar1/Scripts/Login/Script1611188057074.groovy(failed) -->
+</suite> <!-- Failed suite [TmpSuite] -->
