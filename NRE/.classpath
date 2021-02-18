@@ -47,5 +47,8 @@
 			<attribute name="maven.scope" value="compile"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/Katalon Jars/org.apache.commons.lang_2.6.0.jar"/>
+	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/Katalon Jars/org.dom4j_1.6.1.v201312101416.jar"/>
+	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/NRE Jars/opencsv-5.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

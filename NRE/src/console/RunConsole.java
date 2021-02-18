@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.Scanner;
+import com.ucf.pcte.*;
 
 public class RunConsole {
 	
@@ -15,7 +16,6 @@ public class RunConsole {
 	public static Map<String,Object> GlobalVariables;
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		Scanner in = new Scanner(System.in);
 		System.out.println("Welcome to NRE. The new runtime engine for Katalon Studio.");
@@ -65,20 +65,8 @@ public class RunConsole {
 		
 		TestCases.getTestCases(testSuite);
 		
-//		GroovyClassLoader cl = new GroovyClassLoader(RunConsole.class.getClassLoader());
-//		
-//		try {
-//            cl.loadClass("GlobalVariable");
-//        } catch (ClassNotFoundException ex) {
-//            try {
-//                cl.parseClass(new File(RunConfiguration.getProjectDir(),"/Libs/internal/GlobalVariable.groovy"));
-//            } catch (Exception e) {
-//            	e.printStackTrace();
-//            }
-//        }
-		
-//		GlobalVariables = GlobalVars.getGlobalVars(profile);
-//		GlobalVariables.forEach((key, value) -> System.out.println(key + ":" + value + "class:" + value.getClass().getName()));
+		GlobalVariables = GlobalVars.getGlobalVars(profile);
+		GlobalVariables.forEach((key, value) -> System.out.println(key + ":" + value + "class:" + value.getClass().getName()));
 
 		
 		try 

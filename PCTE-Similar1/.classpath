@@ -87,7 +87,6 @@
 	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/Katalon Jars/com.kms.katalon.console_1.0.0.202012231052.jar"/>
 	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/Katalon Jars/com.kms.katalon.constant_1.0.0.202012231052.jar"/>
 	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/Katalon Jars/com.kms.katalon.controller_1.0.0.202012231052.jar"/>
-	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/Katalon Jars/com.kms.katalon.core_custom.jar"/>
 	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/Katalon Jars/com.kms.katalon.core.appium_1.0.0.202012231052.jar"/>
 	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/Katalon Jars/com.kms.katalon.core.cucumber_1.0.0.202012231052.jar"/>
 	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/Katalon Jars/com.kms.katalon.core.mobile_1.0.0.202012231052.jar"/>
@@ -386,7 +385,6 @@
 	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/Katalon Jars/poi-ooxml-schemas-3.17.jar"/>
 	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/Katalon Jars/proxy-vole-1.0.4-SNAPSHOT-jar-with-dependencies.jar"/>
 	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/Katalon Jars/repackaged-sikuli-api-1.0.2-standalone.jar"/>
-	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/Katalon Jars/run_config_fixed.jar"/>
 	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/Katalon Jars/selenium-leg-rc-3.141.59.jar"/>
 	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/Katalon Jars/selenium-server-standalone-3.141.59.jar"/>
 	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/Katalon Jars/selenium-shutterbug-1.1.jar"/>
@@ -406,5 +404,6 @@
 	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/Katalon Jars/xml-apis_1.4.1.jar"/>
 	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/Katalon Jars/xmlbeans-2.6.0.jar"/>
 	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/Katalon Jars/xmlbeans-3.1.0.jar"/>
+	<classpathentry kind="lib" path="/Users/sebastiangilarranz/Desktop/Sebastian/Katalon Jars/com.kms.katalon.core_1.0.0.202012231052.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

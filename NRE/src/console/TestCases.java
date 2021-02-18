@@ -3,15 +3,12 @@ package console;
 import groovy.util.Node;
 import groovy.util.NodeList;
 import groovy.xml.XmlParser;
-
 import java.io.*;
 
 public class TestCases {
 	
-	
 	public static void getTestCases(String testSuite)
 	{
-		
 		try
 		{
 			Node rootNode = new XmlParser()
@@ -27,7 +24,6 @@ public class TestCases {
 		{
 			e.printStackTrace();
 		}
-
 
 	}
 }

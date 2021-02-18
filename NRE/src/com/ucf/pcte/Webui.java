@@ -1,5 +1,13 @@
 package com.ucf.pcte;
+
 import java.util.concurrent.TimeUnit;
+
+import javax.crypto.Cipher;
+import javax.crypto.SecretKey;
+import javax.crypto.SecretKeyFactory;
+import javax.crypto.spec.PBEKeySpec;
+import javax.crypto.spec.PBEParameterSpec;
+import javax.xml.bind.DatatypeConverter;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -7,8 +15,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-
-import com.kms.katalon.util.CryptoUtil;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 
@@ -21,7 +29,7 @@ public class Webui {
 	{
 		open = new Webui();
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--headless");
+//		options.addArguments("--headless");
 		open.driver = new ChromeDriver(options);
 	    open.driver.manage().window().maximize();
 	    open.driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
@@ -42,13 +50,20 @@ public class Webui {
 	public static void setEncryptedText(String xpath, String text)
 	{
 		WebElement element = open.driver.findElement(By.xpath(xpath));
-		String rawText = "couldn't do the thing";
-		CryptoUtil.CrytoInfo cryptoInfo = CryptoUtil.getDefault(text);
-		try {
-			 rawText = CryptoUtil.decode(cryptoInfo);
+		String rawText = "";
+		
+		try 
+		{
+			SecretKeyFactory keyFactory = SecretKeyFactory.getInstance("PBEwithSHA1AndDESede");
+	        SecretKey key = keyFactory.generateSecret(new PBEKeySpec("S3cReT K3i".toCharArray()));
+	        Cipher pbeCipher = Cipher.getInstance("PBEwithSHA1AndDESede");
+	        pbeCipher.init(2, key, new PBEParameterSpec("K@tal0n STudlO".getBytes(), 20));
+	        
+			rawText = new String(pbeCipher.doFinal(DatatypeConverter.parseBase64Binary(text)), "UTF-8");
+		
 		}catch (Exception e)
 		{
-			e.printStackTrace();
+			System.out.println("Couldn't decode password.");
 		}
 		element.sendKeys(rawText);
 		
@@ -73,18 +88,16 @@ public class Webui {
 	
 	public static void verifyElementNotPresent(String xpath, int time)
 	{
-	    try
-	    {
-	    	open.driver.wait(time*5000);
-	    	WebElement shouldNotFind = open.driver.findElement(By.xpath(xpath));
-	    	System.out.println("**" + shouldNotFind + "**");
-	    	if(shouldNotFind != null)
-	    		Assert.fail();
-	    }catch (Exception e)
-	    {
-	    	System.out.println("Not found. We can continue.");
-	    }
-		
+		Boolean notLocated = new WebDriverWait(open.driver, time).until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(xpath)));
+	    
+		if(notLocated == true)
+		{
+			return;
+		}else 
+		{
+			Assert.fail();
+		}
+	    
 	}
 	
 	public static void verifyElementPresent(String xpath, int time)

@@ -1,28 +1,20 @@
 package com.ucf.pcte;
 
-import java.text.MessageFormat;
-
 import org.junit.Assert;
-
-import com.kms.katalon.core.cucumber.keyword.internal.CucumberRunnerResultImpl;
-import com.kms.katalon.core.logging.KeywordLogger;
-
 import cucumber.api.cli.Main;
 import console.RunConsole;
 import console.Execute;
 
 public class CucumberKW {
 	
-	private static final KeywordLogger logger = KeywordLogger.getInstance(CucumberKW.class);
+//	private static final KeywordLogger logger = KeywordLogger.getInstance(CucumberKW.class);
 	
 	public static void runFeatureFile(String relativeFilePath)
 	{
 		String reportDir = Execute.reportDir;
 		String projectDir = RunConsole.project;
 		
-		logger.logInfo(
-				MessageFormat.format("Starting run keyword runFeatureFile: ''{0}'' and extract report to folder: ''{1}''...",
-					relativeFilePath, reportDir));
+		System.out.println("Starting run keyword runFeatureFile: " + relativeFilePath + " and extract report to folder: " + reportDir + "...");
 		
 		
 		String[] argv = new String[]{
@@ -37,9 +29,7 @@ public class CucumberKW {
                 };
 
 		boolean runSuccess = Main.run(argv, CucumberKW.class.getClassLoader()) == 0;
-		
-		CucumberRunnerResultImpl cucumberResult = new CucumberRunnerResultImpl(
-				runSuccess ? "passed" : "failed", reportDir);
+	
 			if (runSuccess) {
 				System.out.println("Feature file: "+ relativeFilePath + " was passed");
 			} else {
