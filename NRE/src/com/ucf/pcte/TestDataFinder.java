@@ -7,10 +7,12 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-import console.RunConsole;
+
+import com.constants.StringConstants;
 
 public class TestDataFinder {
 	
+	@SuppressWarnings("unused")
 	public static  TestData findTestData(String fileName)
 	{
 		String type = null;
@@ -23,7 +25,7 @@ public class TestDataFinder {
 		{
 			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder builder = factory.newDocumentBuilder();
-			Document document = builder.parse(new File(RunConsole.project + "/Data Files/" + fileName + ".dat"));
+			Document document = builder.parse(new File(StringConstants.PROJECT_DIR + "/Data Files/" + fileName + ".dat"));
 			document.getDocumentElement().normalize();
 			Element root = document.getDocumentElement();
 			NodeList nList = document.getElementsByTagName("DataFileEntity");

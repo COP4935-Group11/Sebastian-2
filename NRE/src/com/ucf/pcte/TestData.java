@@ -2,11 +2,13 @@ package com.ucf.pcte;
 
 import java.io.FileReader;
 import java.util.List;
+
+import com.constants.StringConstants;
 import com.opencsv.CSVParser;
 import com.opencsv.CSVParserBuilder;
 import com.opencsv.CSVReader;
 import com.opencsv.CSVReaderBuilder;
-import console.RunConsole;
+
 
 public class TestData {
 	
@@ -32,7 +34,7 @@ public class TestData {
 		
 		if(isInternal == true)
 		{
-			path = RunConsole.project + "/" + path;
+			path = StringConstants.PROJECT_DIR + StringConstants.ID_SEPARATOR + path;
 		}
 		
 		switch (type)

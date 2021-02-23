@@ -3,17 +3,20 @@ package com.ucf.pcte;
 import java.io.File;
 import javax.xml.parsers.*;
 import org.w3c.dom.*;
-import console.RunConsole;
+
+import com.constants.StringConstants;
+
 
 public class TestObject {
 	
+	@SuppressWarnings("unused")
 	public static String findTestObject(String location)
 	{
 		try
 		{
 			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder builder = factory.newDocumentBuilder();
-			Document document = builder.parse(new File(RunConsole.project + "/" + location + ".rs"));
+			Document document = builder.parse(new File(StringConstants.PROJECT_DIR + "/" + location + ".rs"));
 			document.getDocumentElement().normalize();
 			Element root = document.getDocumentElement();
 			NodeList nList = document.getElementsByTagName("selectorCollection");
@@ -37,13 +40,14 @@ public class TestObject {
 	}
 	
 	
+	@SuppressWarnings("unused")
 	public static String findTestObject(String location, int nothing)
 	{
 		try
 		{
 			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder builder = factory.newDocumentBuilder();
-			Document document = builder.parse(new File(RunConsole.project + "/" + location + ".rs"));
+			Document document = builder.parse(new File(StringConstants.PROJECT_DIR + "/" + location + ".rs"));
 			document.getDocumentElement().normalize();
 			Element root = document.getDocumentElement();
 			NodeList nList = document.getElementsByTagName("selectorCollection");

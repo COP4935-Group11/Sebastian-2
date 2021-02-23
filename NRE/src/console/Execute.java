@@ -9,9 +9,13 @@ import org.testng.TestNG;
 import org.testng.xml.XmlClass;
 import org.testng.xml.XmlSuite;
 import org.testng.xml.XmlTest;
+
+import com.constants.StringConstants;
+
 import junit.xml.parser.Merger;
 
 
+@SuppressWarnings("unused")
 public class Execute {
 	
 	public static String reportDir;
@@ -23,8 +27,13 @@ public class Execute {
 	{
 		LocalDateTime now = LocalDateTime.now();  
 		
-		File reportdir = new File(RunConsole.project + "/cucumber_report/" + now);
-		reportDir = (RunConsole.project + "/cucumber_report/" + now);
+		new File(StringConstants.PROJECT_DIR + "/cucumber_report").mkdir();
+		
+		reportDir = (StringConstants.PROJECT_DIR + "/cucumber_report/" + now);
+		
+		
+		
+		File reportdir = new File(reportDir);
 		
 		List<XmlSuite> suites = new ArrayList<XmlSuite>();
 		List<XmlClass> classes = new ArrayList<XmlClass>();
@@ -36,13 +45,14 @@ public class Execute {
 		for(String eachCase : RunConsole.testCases)
 		{
 			eachCase = eachCase.replace("Test Cases", "Scripts");
-			File dir = new File(RunConsole.project + "/" + eachCase);
+			File dir = new File("temp" + StringConstants.ID_SEPARATOR + eachCase);
 			
 			XmlTest test = new XmlTest(suite);
 			test.setName(eachCase.replace("Scripts/", ""));
 
 			test.setXmlClasses(classes);
-			test.addParameter("path",RunConsole.project + "/" + eachCase + "/" + dir.list()[0]);
+			test.addParameter("path","temp" + StringConstants.ID_SEPARATOR 
+					+ eachCase + StringConstants.ID_SEPARATOR + dir.list()[0]);
 		}
 	
 		suites.add(suite);
@@ -52,7 +62,8 @@ public class Execute {
 	
 		
 		try {
-			Merger.main(new String[] {"-i=" + reportDir,"-o=" + RunConsole.project + "/cucumber_report/" + now + ".xml", "-s=Smoke"});
+			Merger.main(new String[] {"-i=" + reportDir,"-o=" + StringConstants.PROJECT_DIR +
+					"/cucumber_report/" + now + StringConstants.XML_EXT, "-s=Smoke"});
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

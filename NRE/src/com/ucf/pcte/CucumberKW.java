@@ -2,31 +2,41 @@ package com.ucf.pcte;
 
 import org.junit.Assert;
 import cucumber.api.cli.Main;
-import console.RunConsole;
-import console.Execute;
+
+
+import com.constants.StringConstants;
+
 
 public class CucumberKW {
 	
 //	private static final KeywordLogger logger = KeywordLogger.getInstance(CucumberKW.class);
 	
+	
 	public static void runFeatureFile(String relativeFilePath)
 	{
-		String reportDir = Execute.reportDir;
-		String projectDir = RunConsole.project;
+				
+		relativeFilePath = StringConstants.FEATURES_FOLDER.concat(relativeFilePath
+				.substring(relativeFilePath.lastIndexOf('/'), relativeFilePath.length()));
 		
-		System.out.println("Starting run keyword runFeatureFile: " + relativeFilePath + " and extract report to folder: " + reportDir + "...");
+		//System.out.println(relativeFilePath);
+		
+		System.out.println("Starting run keyword runFeatureFile: " + relativeFilePath 
+				+ " and extract report to folder: " + StringConstants.REPORT_DIR + "...");
 		
 		
 		String[] argv = new String[]{
-				"-g",
-				"",
-				projectDir + "/" + relativeFilePath,
-				"--strict",
-                "--plugin",
+				relativeFilePath,
+				"--glue",
+				StringConstants.STEP_DEFS_GLUE,
+				"--no-strict",
+                "-p",
                 "pretty",
-                "--plugin",
-    			"junit:"+ reportDir +"/" + System.currentTimeMillis() + ".xml"
+                "-p",
+    			"junit:"+ StringConstants.REPORT_DIR + StringConstants.ID_SEPARATOR + System.currentTimeMillis() + StringConstants.XML_EXT
                 };
+		
+		
+	
 
 		boolean runSuccess = Main.run(argv, CucumberKW.class.getClassLoader()) == 0;
 	

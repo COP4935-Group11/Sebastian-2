@@ -11,6 +11,7 @@ import groovy.util.NodeList;
 import groovy.xml.XmlParser;
 
 
+@SuppressWarnings("unused")
 public class GlobalVars{
 
 	

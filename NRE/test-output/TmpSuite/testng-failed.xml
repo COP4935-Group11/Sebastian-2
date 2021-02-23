@@ -1,8 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [TmpSuite]">
+  <test name="Register(failed)">
+    <parameter name="path" value="temp/Scripts/Register/Script1611241895950.groovy"/>
+    <classes>
+      <class name="console.RunScript">
+        <methods>
+          <include name="runScript" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- console.RunScript -->
+    </classes>
+  </test> <!-- Register(failed) -->
+  <test name="Login(failed)">
+    <parameter name="path" value="temp/Scripts/Login/Script1611188057074.groovy"/>
+    <classes>
+      <class name="console.RunScript">
+        <methods>
+          <include name="runScript" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- console.RunScript -->
+    </classes>
+  </test> <!-- Login(failed) -->
   <test name="Add Contact_Delete Contact(failed)">
-    <parameter name="path" value="/Users/sebastiangilarranz/Desktop/Sebastian/PCTE-Similar1/Scripts/Add Contact_Delete Contact/Script1611247483450.groovy"/>
+    <parameter name="path" value="temp/Scripts/Add Contact_Delete Contact/Script1611247483450.groovy"/>
     <classes>
       <class name="console.RunScript">
         <methods>
@@ -11,4 +31,14 @@
       </class> <!-- console.RunScript -->
     </classes>
   </test> <!-- Add Contact_Delete Contact(failed) -->
+  <test name="Verify Existing Contacts(failed)">
+    <parameter name="path" value="temp/Scripts/Verify Existing Contacts/Script1611259297228.groovy"/>
+    <classes>
+      <class name="console.RunScript">
+        <methods>
+          <include name="runScript" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- console.RunScript -->
+    </classes>
+  </test> <!-- Verify Existing Contacts(failed) -->
 </suite> <!-- Failed suite [TmpSuite] -->
