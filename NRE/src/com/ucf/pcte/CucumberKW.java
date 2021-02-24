@@ -23,7 +23,7 @@ public class CucumberKW {
 		System.out.println("Starting run keyword runFeatureFile: " + relativeFilePath 
 				+ " and extract report to folder: " + StringConstants.REPORT_DIR + "...");
 		
-		
+		System.out.println(StringConstants.REPORT_DIR);
 		String[] argv = new String[]{
 				relativeFilePath,
 				"--glue",
@@ -32,7 +32,7 @@ public class CucumberKW {
                 "-p",
                 "pretty",
                 "-p",
-    			"junit:"+ StringConstants.REPORT_DIR + StringConstants.ID_SEPARATOR + System.currentTimeMillis() + StringConstants.XML_EXT
+    			"junit:"+ StringConstants.REPORT_DIR + StringConstants.ID_SEPARATOR +System.currentTimeMillis() + StringConstants.XML_EXT
                 };
 		
 		

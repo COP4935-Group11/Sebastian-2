@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Feb 23 00:34:56 EST 2021</td>
+<td>Started on:</td><td>Wed Feb 24 14:47:08 EST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (56 ms)</td>
+<tr><td>Total time:</td><td>21 seconds (21764 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,38 +76,31 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='console.RunScript.runScript()'><b>runScript</b><br>Test class: console.RunScript<br>Parameters: temp/Scripts/Register/Script1611241895950.groovy</td>
-<td><div><pre>java.lang.AssertionError: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
-/Users/sebastiangilarranz/Downloads/Richard-main/temp/scripts/Register/Script1611241895950.groovy: 5: unable to resolve class com.kms.katalon.core.testdata.CSVData
- @ line 5, column 1.
-   import com.kms.katalon.core.testdata.CSVData
-   ^
-
-/Users/sebastiangilarranz/Downloads/Richard-main/temp/scripts/Register/Script1611241895950.groovy: 6: unable to resolve class com.kms.katalon.core.testdata.reader.CSVSeparator
- @ line 6, column 1.
-   import com.kms.katalon.core.testdata.reader.CSVSeparator
-   ^
-
-2 errors
-
-	at console.RunScript.runScript(RunScript.java:26)
-	at console.Execute.run(Execute.java:61)
+<td><div><pre>java.lang.AssertionError: Cucumber feature file failed.
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.ucf.pcte.CucumberKW.runFeatureFile(CucumberKW.java:46)
+	at com.ucf.pcte.CucumberKW$runFeatureFile.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at Script1611241895950.run(Script1611241895950.groovy:10)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:427)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:470)
+	at console.RunScript.runScript(RunScript.java:23)
+	at console.Execute.run(Execute.java:62)
 	at console.RunConsole.main(RunConsole.java:156)
-... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace540092563", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace540092563'><pre>java.lang.AssertionError: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
-/Users/sebastiangilarranz/Downloads/Richard-main/temp/scripts/Register/Script1611241895950.groovy: 5: unable to resolve class com.kms.katalon.core.testdata.CSVData
- @ line 5, column 1.
-   import com.kms.katalon.core.testdata.CSVData
-   ^
-
-/Users/sebastiangilarranz/Downloads/Richard-main/temp/scripts/Register/Script1611241895950.groovy: 6: unable to resolve class com.kms.katalon.core.testdata.reader.CSVSeparator
- @ line 6, column 1.
-   import com.kms.katalon.core.testdata.reader.CSVSeparator
-   ^
-
-2 errors
-
-	at org.testng.Assert.fail(Assert.java:93)
-	at console.RunScript.runScript(RunScript.java:26)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2134194703", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2134194703'><pre>java.lang.AssertionError: Cucumber feature file failed.
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.ucf.pcte.CucumberKW.runFeatureFile(CucumberKW.java:46)
+	at com.ucf.pcte.CucumberKW$runFeatureFile.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at Script1611241895950.run(Script1611241895950.groovy:10)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:427)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:470)
+	at console.RunScript.runScript(RunScript.java:23)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -130,11 +123,11 @@ function toggleAllBoxes() {
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
 	at org.testng.TestNG.runSuites(TestNG.java:1144)
 	at org.testng.TestNG.run(TestNG.java:1115)
-	at console.Execute.run(Execute.java:61)
+	at console.Execute.run(Execute.java:62)
 	at console.RunConsole.main(RunConsole.java:156)
 </pre></div></td>
-<td>0</td>
-<td>console.RunScript@617fe9e1</td></tr>
+<td>21</td>
+<td>console.RunScript@3b809711</td></tr>
 </table><p>
 </body>
 </html>

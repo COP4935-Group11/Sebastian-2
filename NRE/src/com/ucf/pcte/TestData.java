@@ -55,6 +55,20 @@ public class TestData {
 	{
 		Object value = null;
 		
+		if(isInternal == true)
+		{
+			path = StringConstants.PROJECT_DIR + StringConstants.ID_SEPARATOR + path;
+		}
+		
+		switch (type)
+		{
+			case "CSV":
+				return getCSVData(column, row);
+				
+			default:
+				break;
+		}
+		
 		
 		return value;
 		
@@ -74,7 +88,7 @@ public class TestData {
 		  
 		        List<String[]> allData = csvReader.readAll();
 		        
-		        return allData.get(column)[row-1];
+		        return allData.get(row)[column];
 		        
 		 }catch(Exception e)
 		 {
@@ -83,6 +97,50 @@ public class TestData {
 		
 		return "Could not get value of Test Data";
 		
+	}
+	
+	public Object getCSVData(String column, int row)
+	{
+		
+		 try { 
+		        FileReader filereader = new FileReader(path); 
+		  
+		        CSVParser parser = new CSVParserBuilder().withSeparator(',').build(); 
+		   
+		        CSVReader csvReader = new CSVReaderBuilder(filereader) 
+		                                  .withCSVParser(parser) 
+		                                  .build(); 
+		  
+		        List<String[]> allData = csvReader.readAll();
+		        
+		        
+		        
+//		        System.out.println("**"+allData.get(row)[getColumnIndex(column,allData)]);
+		        return allData.get(row)[getColumnIndex(column,allData)];
+		        
+		 }catch(Exception e)
+		 {
+			 e.printStackTrace();
+		 }
+		
+		return "Could not get value of Test Data";
+		
+	}
+	
+	public int getColumnIndex(String column, List<String[]> allData)
+	{
+		for(int i = 0; i < allData.size(); i++)
+		{
+			if(allData.get(0)[i].equals(column)) 
+			{
+				return i;
+			}
+		}
+		
+		
+		
+		
+		return 0;
 	}
 
 }

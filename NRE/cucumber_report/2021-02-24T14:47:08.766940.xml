@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuites failures="1" name="Smoke" tests="6" time="49.202292"><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="21.327129">
+    <testcase classname="Register to Contactology" name="Register" time="21.327129">
+        <failure message="java.lang.AssertionError: Could not verify Element Text.&#10;&#9;at org.testng.Assert.fail(Assert.java:93)&#10;&#9;at com.ucf.pcte.gold.WebUI.verifyElementText(WebUI.groovy:305)&#10;&#9;at com.ucf.pcte.gold.WebUI$verifyElementText$5.call(Unknown Source)&#10;&#9;at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)&#10;&#9;at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)&#10;&#9;at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)&#10;&#9;at com.stepdefinitions.Login.confirmDashboard(Login:42)&#10;&#9;at ✽.I should have access to dashboard(temp/features/Register-success.feature:6)&#10;"><![CDATA[Given I am on contactology..................................................passed
+When I register to contactology.............................................passed
+Then I should have access to dashboard......................................failed
+
+StackTrace:
+java.lang.AssertionError: Could not verify Element Text.
+	at org.testng.Assert.fail(Assert.java:93)
+	at com.ucf.pcte.gold.WebUI.verifyElementText(WebUI.groovy:305)
+	at com.ucf.pcte.gold.WebUI$verifyElementText$5.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
+	at com.stepdefinitions.Login.confirmDashboard(Login:42)
+	at ✽.I should have access to dashboard(temp/features/Register-success.feature:6)
+]]></failure>
+    </testcase>
+</testsuite><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="3.833878">
+    <testcase classname="VerifyContacts using User001" name="Verify Contacts" time="3.833878">
+        <system-out><![CDATA[Given I am on contactology..................................................passed
+When I login to contactology................................................passed
+Then I should see existing contacts.........................................passed
+]]></system-out>
+    </testcase>
+</testsuite><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="13.35893">
+    <testcase classname="Login to Contactology" name="Login" time="9.489615">
+        <system-out><![CDATA[Given I am on contactology..................................................passed
+When I login to contactology................................................passed
+Then I should have access to dashboard......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login to Contactology" name="Logout" time="3.869315">
+        <system-out><![CDATA[Given I am on contactology..................................................passed
+And I login to contactology.................................................passed
+When I logout of contactology...............................................passed
+Then I should no longer have access to dashboard............................passed
+]]></system-out>
+    </testcase>
+</testsuite><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="6.920339">
+    <testcase classname="AddContact" name="Add Contact" time="6.920339">
+        <system-out><![CDATA[Given I am on contactology..................................................passed
+When I login to contactology................................................passed
+And I add contact...........................................................passed
+Then I should see contact on contactlist....................................passed
+]]></system-out>
+    </testcase>
+</testsuite><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="3.762016">
+    <testcase classname="Delete Contact" name="Delete previously created contact" time="3.762016">
+        <system-out><![CDATA[Given I am on contactology..................................................passed
+When I login to contactology................................................passed
+And I delete contact previously created.....................................passed
+Then I should no longer see contact.........................................passed
+]]></system-out>
+    </testcase>
+</testsuite></testsuites>

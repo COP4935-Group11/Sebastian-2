@@ -27,9 +27,10 @@ public class Execute {
 	{
 		LocalDateTime now = LocalDateTime.now();  
 		
-		new File(StringConstants.PROJECT_DIR + "/cucumber_report").mkdir();
+		new File("cucumber_report").mkdir();
 		
-		reportDir = (StringConstants.PROJECT_DIR + "/cucumber_report/" + now);
+		reportDir = ("cucumber_report/" + now);
+		StringConstants.REPORT_DIR = reportDir;
 		
 		
 		
@@ -62,8 +63,8 @@ public class Execute {
 	
 		
 		try {
-			Merger.main(new String[] {"-i=" + reportDir,"-o=" + StringConstants.PROJECT_DIR +
-					"/cucumber_report/" + now + StringConstants.XML_EXT, "-s=Smoke"});
+			Merger.main(new String[] {"-i=" + reportDir,"-o=" +
+					"cucumber_report/" + now + StringConstants.XML_EXT, "-s=Smoke"});
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

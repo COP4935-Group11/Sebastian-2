@@ -12,6 +12,7 @@ import org.openqa.selenium.NoSuchElementException
 // Maybe continuing past some function errors? Maybe for the runtime engine running Test Suites to continue past failed Test Cases.
 import org.openqa.selenium.TimeoutException
 import org.openqa.selenium.support.ui.WebDriverWait
+import org.testng.Assert
 import org.openqa.selenium.support.ui.FluentWait
 import org.openqa.selenium.support.ui.ExpectedConditions
 
@@ -301,7 +302,7 @@ public class WebUI
 		}
 		catch(TimeoutException)
 		{
-			return false;
+			Assert.fail("Could not verify Element Text.")
 		}
 	}
 

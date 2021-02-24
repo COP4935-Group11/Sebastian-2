@@ -10,7 +10,7 @@ public class StringConstants {
 	
 	public static String ROOT_DIR = System.getProperty("user.dir")+"/";
 	public static String PROJECT_DIR = RunConsole.project;
-	public static String REPORT_DIR = Execute.reportDir;
+	public static String REPORT_DIR = "";
 	public static String FEATURES_FOLDER = "temp/features";
 	public static String FEATURES_SOURCE = PROJECT_DIR.concat("/Include/features/");
 	public static String ID_SEPARATOR= "/";
