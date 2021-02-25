@@ -29,7 +29,6 @@
 	<classpathentry kind="lib" path="lib/org.apache.commons.lang3_3.6.0.jar"/>
 	<classpathentry kind="lib" path="lib/selenium-server-standalone-3.141.59.jar"/>
 	<classpathentry kind="lib" path="lib/testng-6.11.jar"/>
-	<classpathentry kind="lib" path="lib/com.kms.katalon.core_1.0.0.202012231052.jar"/>
 	<classpathentry kind="lib" path="lib/org.eclipse.core.resources_3.11.1.v20161107-2032.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
