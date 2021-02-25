@@ -8,6 +8,7 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+import com.configuration.RunConfiguration;
 import com.constants.StringConstants;
 
 public class TestDataFinder {
@@ -25,7 +26,8 @@ public class TestDataFinder {
 		{
 			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder builder = factory.newDocumentBuilder();
-			Document document = builder.parse(new File(StringConstants.PROJECT_DIR + "/Data Files/" + fileName + ".dat"));
+			Document document = builder.parse(new File(RunConfiguration.getProjectDir() + StringConstants.ID_SEPARATOR
+												+ StringConstants.DATA_FILES_FOLDER + StringConstants.ID_SEPARATOR + fileName + StringConstants.DATA_FILES_EXT));
 			document.getDocumentElement().normalize();
 			Element root = document.getDocumentElement();
 			NodeList nList = document.getElementsByTagName("DataFileEntity");

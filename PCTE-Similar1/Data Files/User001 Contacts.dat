@@ -6,9 +6,9 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator>COMMA</csvSeperator>
    <dataFileGUID>e2487ca0-9cd4-4603-bd88-0d428feb822b</dataFileGUID>
-   <dataSourceUrl>Data Files/User001_Contacts.csv</dataSourceUrl>
+   <dataSourceUrl>/Users/sebastiangilarranz/Katalon Studio/PCTE_Similar/Data Files/User001_Contacts.csv</dataSourceUrl>
    <driver>CSV</driver>
-   <isInternalPath>true</isInternalPath>
+   <isInternalPath>false</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
    <sheetName></sheetName>

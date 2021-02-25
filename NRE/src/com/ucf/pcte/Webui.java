@@ -13,8 +13,6 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -33,10 +31,10 @@ public class Webui {
 	{
 		
 		open = new Webui();
-		ChromeOptions options = new ChromeOptions();
-//		options.addArguments("--disable-web-security","--allow-running-insecure-content","--ignore-certificate-errors");
+		FirefoxOptions options = new FirefoxOptions();
+		options.addArguments("--disable-web-security","--allow-running-insecure-content","--ignore-certificate-errors");
 		options.addArguments("--headless");
-		open.driver = new ChromeDriver(options);
+		open.driver = new FirefoxDriver(options);
 	    open.driver.manage().window().maximize();
 	    open.driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	}

@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Smoke" time="112.964" tests="4" failures="1" skips="0" errors="0">
+   <testsuite name="Smoke" tests="4" failures="1" errors="0" time="112.964" skips="0" timestamp="2021-02-02 23:27:48" hostname="sebastiangilarranz - sebastians-mbp" id="Test Suites/Smoke">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/sebastiangilarranz/Katalon Studio/PCTE-Similar1/Reports/20210202_232734/Smoke/20210202_232734"/>
+         <property name="logFiles" value="/Users/sebastiangilarranz/Katalon Studio/PCTE-Similar1/Reports/20210202_232734/Smoke/20210202_232734/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="sebastiangilarranz - sebastians-mbp"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="7.8.2.208"/>
+         <property name="browser" value="Chrome 88.0.4324.146"/>
+         <property name="hostAddress" value="192.168.1.239"/>
+         <property name="sessionId" value="3f5b33767def2c1329159f90577dab13"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Mac OS X"/>
+      </properties>
+      <testcase name="Test Cases/Register" time="17.329" classname="Test Cases/Register" status="PASSED">
+         <system-out><![CDATA[2021-02-02 23:27:49 - [TEST_CASE][PASSED] - Test Cases/Register: Test Cases/Register
+
+2021-02-02 23:27:49 - [TEST_STEP][PASSED] - runFeatureFile("Include/features/Register/Register-success.feature"): Feature file: 'Include/features/Register/Register-success.feature' was passed
+
+2021-02-02 23:27:49 - [MESSAGE][INFO] - Starting run keyword runFeatureFile: 'Include/features/Register/Register-success.feature' and extract report to folder: '/Users/sebastiangilarranz/Katalon Studio/PCTE-Similar1/Reports/20210202_232734/Smoke/20210202_232734/cucumber_report/1612326469821'...
+
+2021-02-02 23:27:50 - [TEST_CASE][PASSED] - Start Test Case : SCENARIO Register: SCENARIO Register
+
+2021-02-02 23:27:50 - [TEST_STEP][PASSED] - I am on contactology: I am on contactology
+
+2021-02-02 23:27:51 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-02-02 23:27:51 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-02-02 23:27:54 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-02-02 23:28:00 - [MESSAGE][PASSED] - Navigate to 'https://contactology.pythonanywhere.com/' successfully
+
+2021-02-02 23:28:00 - [MESSAGE][PASSED] - I am on contactology
+
+2021-02-02 23:28:00 - [TEST_STEP][PASSED] - I register to contactology: I register to contactology
+
+2021-02-02 23:28:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Contactology - login/a_Create Account' is clicked on
+
+2021-02-02 23:28:02 - [MESSAGE][PASSED] - Text 'User004' is set on object 'Object Repository/Page_Contactology - register/input_First Name_firstname'
+
+2021-02-02 23:28:03 - [MESSAGE][PASSED] - Text 'User004' is set on object 'Object Repository/Page_Contactology - register/input_Last Name_lastname'
+
+2021-02-02 23:28:03 - [MESSAGE][PASSED] - Text 'User004' is set on object 'Object Repository/Page_Contactology - register/input_User Name_username'
+
+2021-02-02 23:28:03 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Contactology - register/input_Password_pass'
+
+2021-02-02 23:28:04 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Contactology - register/input_Confirm Password_confpass'
+
+2021-02-02 23:28:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Contactology - register/button_Register' is clicked on
+
+2021-02-02 23:28:04 - [MESSAGE][PASSED] - I register to contactology
+
+2021-02-02 23:28:04 - [TEST_STEP][PASSED] - I should have access to dashboard: I should have access to dashboard
+
+2021-02-02 23:28:06 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_Contactology - main/h2_Contacts' are matched.
+
+2021-02-02 23:28:06 - [MESSAGE][PASSED] - I should have access to dashboard
+
+2021-02-02 23:28:06 - [MESSAGE][PASSED] - Feature file: 'Include/features/Register/Register-success.feature' was passed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Login" time="23.513" classname="Test Cases/Login" status="PASSED">
+         <system-out><![CDATA[2021-02-02 23:28:06 - [TEST_CASE][PASSED] - Test Cases/Login: Test Cases/Login
+
+2021-02-02 23:28:06 - [TEST_STEP][PASSED] - runFeatureFile("Include/features/login/Login-success.feature"): Feature file: 'Include/features/login/Login-success.feature' was passed
+
+2021-02-02 23:28:06 - [MESSAGE][INFO] - Starting run keyword runFeatureFile: 'Include/features/login/Login-success.feature' and extract report to folder: '/Users/sebastiangilarranz/Katalon Studio/PCTE-Similar1/Reports/20210202_232734/Smoke/20210202_232734/cucumber_report/1612326486771'...
+
+2021-02-02 23:28:06 - [TEST_CASE][PASSED] - Start Test Case : SCENARIO Login: SCENARIO Login
+
+2021-02-02 23:28:06 - [TEST_STEP][PASSED] - I am on contactology: I am on contactology
+
+2021-02-02 23:28:06 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2021-02-02 23:28:06 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-02-02 23:28:06 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-02-02 23:28:08 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-02-02 23:28:10 - [MESSAGE][PASSED] - Navigate to 'https://contactology.pythonanywhere.com/' successfully
+
+2021-02-02 23:28:10 - [MESSAGE][PASSED] - I am on contactology
+
+2021-02-02 23:28:10 - [TEST_STEP][PASSED] - I login to contactology: I login to contactology
+
+2021-02-02 23:28:11 - [MESSAGE][PASSED] - Text 'User001' is set on object 'Object Repository/Page_Contactology - login/input_User Name_username'
+
+2021-02-02 23:28:12 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Contactology - login/input_Password_pass'
+
+2021-02-02 23:28:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Contactology - login/button_Login' is clicked on
+
+2021-02-02 23:28:12 - [MESSAGE][PASSED] - I login to contactology
+
+2021-02-02 23:28:12 - [TEST_STEP][PASSED] - I should have access to dashboard: I should have access to dashboard
+
+2021-02-02 23:28:15 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_Contactology - main/h2_Contacts' are matched.
+
+2021-02-02 23:28:15 - [MESSAGE][PASSED] - I should have access to dashboard
+
+2021-02-02 23:28:15 - [TEST_CASE][PASSED] - Start Test Case : SCENARIO Logout: SCENARIO Logout
+
+2021-02-02 23:28:15 - [TEST_STEP][PASSED] - I am on contactology: I am on contactology
+
+2021-02-02 23:28:15 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2021-02-02 23:28:16 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-02-02 23:28:16 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-02-02 23:28:17 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-02-02 23:28:25 - [MESSAGE][PASSED] - Navigate to 'https://contactology.pythonanywhere.com/' successfully
+
+2021-02-02 23:28:25 - [MESSAGE][PASSED] - I am on contactology
+
+2021-02-02 23:28:25 - [TEST_STEP][PASSED] - I login to contactology: I login to contactology
+
+2021-02-02 23:28:26 - [MESSAGE][PASSED] - Text 'User001' is set on object 'Object Repository/Page_Contactology - login/input_User Name_username'
+
+2021-02-02 23:28:26 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Contactology - login/input_Password_pass'
+
+2021-02-02 23:28:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Contactology - login/button_Login' is clicked on
+
+2021-02-02 23:28:26 - [MESSAGE][PASSED] - I login to contactology
+
+2021-02-02 23:28:26 - [TEST_STEP][PASSED] - I logout of contactology: I logout of contactology
+
+2021-02-02 23:28:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Contactology - main/Page_Contactology - main/a_logout' is clicked on
+
+2021-02-02 23:28:29 - [MESSAGE][PASSED] - I logout of contactology
+
+2021-02-02 23:28:29 - [TEST_STEP][PASSED] - I should no longer have access to dashboard: I should no longer have access to dashboard
+
+2021-02-02 23:28:29 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/Page_Contactology - main/h2_Contacts' located by 'By.xpath: //section[@id='Contacts']/div/h2' is not present after '5' second(s)
+
+2021-02-02 23:28:30 - [MESSAGE][PASSED] - Browser is closed
+
+2021-02-02 23:28:30 - [MESSAGE][PASSED] - I should no longer have access to dashboard
+
+2021-02-02 23:28:30 - [MESSAGE][PASSED] - Feature file: 'Include/features/login/Login-success.feature' was passed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Add Contact_Delete Contact" time="58.756" classname="Test Cases/Add Contact_Delete Contact" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Add Contact_Delete Contact FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Feature file 'Include/features/Add_Contact/DeleteContact.feature' was failed
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:23)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$stepFailed$0.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:112)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:73)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:246)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Add Contact_Delete Contact.run(Add Contact_Delete Contact:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:394)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:385)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:364)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:356)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1612326454146.run(TempTestSuite1612326454146.groovy:39)
+"/>
+         <system-out><![CDATA[2021-02-02 23:28:30 - [TEST_CASE][FAILED] - Test Cases/Add Contact_Delete Contact: Test Cases/Add Contact_Delete Contact FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Feature file 'Include/features/Add_Contact/DeleteContact.feature' was failed
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:23)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$stepFailed$0.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:112)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:73)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:246)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Add Contact_Delete Contact.run(Add Contact_Delete Contact:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:394)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:385)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:364)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:356)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1612326454146.run(TempTestSuite1612326454146.groovy:39)
+
+
+2021-02-02 23:28:30 - [TEST_STEP][PASSED] - runFeatureFile("Include/features/Add_Contact/AddContact.feature"): Feature file: 'Include/features/Add_Contact/AddContact.feature' was passed
+
+2021-02-02 23:28:30 - [MESSAGE][INFO] - Starting run keyword runFeatureFile: 'Include/features/Add_Contact/AddContact.feature' and extract report to folder: '/Users/sebastiangilarranz/Katalon Studio/PCTE-Similar1/Reports/20210202_232734/Smoke/20210202_232734/cucumber_report/1612326510464'...
+
+2021-02-02 23:28:30 - [TEST_CASE][PASSED] - Start Test Case : SCENARIO Add Contact: SCENARIO Add Contact
+
+2021-02-02 23:28:30 - [TEST_STEP][PASSED] - I am on contactology: I am on contactology
+
+2021-02-02 23:28:30 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-02-02 23:28:30 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-02-02 23:28:31 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-02-02 23:28:38 - [MESSAGE][PASSED] - Navigate to 'https://contactology.pythonanywhere.com/' successfully
+
+2021-02-02 23:28:38 - [MESSAGE][PASSED] - I am on contactology
+
+2021-02-02 23:28:38 - [TEST_STEP][PASSED] - I login to contactology: I login to contactology
+
+2021-02-02 23:28:41 - [MESSAGE][PASSED] - Text 'User001' is set on object 'Object Repository/Page_Contactology - login/input_User Name_username'
+
+2021-02-02 23:28:43 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Contactology - login/input_Password_pass'
+
+2021-02-02 23:28:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Contactology - login/button_Login' is clicked on
+
+2021-02-02 23:28:45 - [MESSAGE][PASSED] - I login to contactology
+
+2021-02-02 23:28:45 - [TEST_STEP][PASSED] - I add contact: I add contact
+
+2021-02-02 23:28:50 - [MESSAGE][PASSED] - Text 'Contact004' is set on object 'Object Repository/Page_Contactology - main/input_Name_contactName'
+
+2021-02-02 23:28:54 - [MESSAGE][PASSED] - Text '1112223333' is set on object 'Object Repository/Page_Contactology - main/input_Phone Number_contactNumber'
+
+2021-02-02 23:28:58 - [MESSAGE][PASSED] - Text 'Contact004@test.com' is set on object 'Object Repository/Page_Contactology - main/input_Email_contactEmail'
+
+2021-02-02 23:29:02 - [MESSAGE][PASSED] - Text '123 Test ST Orlando FL 32826' is set on object 'Object Repository/Page_Contactology - main/input_Address_contactAddress'
+
+2021-02-02 23:29:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Contactology - main/button_Create Contact' is clicked on
+
+2021-02-02 23:29:05 - [MESSAGE][PASSED] - I add contact
+
+2021-02-02 23:29:05 - [TEST_STEP][PASSED] - I should see contact on contactlist: I should see contact on contactlist
+
+2021-02-02 23:29:07 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Contactology - main/input_Delete_name3' is present
+
+2021-02-02 23:29:08 - [MESSAGE][PASSED] - Browser is closed
+
+2021-02-02 23:29:08 - [MESSAGE][PASSED] - I should see contact on contactlist
+
+2021-02-02 23:29:08 - [MESSAGE][PASSED] - Feature file: 'Include/features/Add_Contact/AddContact.feature' was passed
+
+2021-02-02 23:29:08 - [TEST_STEP][FAILED] - runFeatureFile("Include/features/Add_Contact/DeleteContact.feature"): Keyword runFeatureFile was failed (Root cause: com.kms.katalon.core.exception.StepFailedException: Feature file 'Include/features/Add_Contact/DeleteContact.feature' was failed
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:23)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$stepFailed$0.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:112)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:73)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:246)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Add Contact_Delete Contact.run(Add Contact_Delete Contact:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:394)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:385)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:364)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:356)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1612326454146.run(TempTestSuite1612326454146.groovy:39)
+)
+
+2021-02-02 23:29:08 - [MESSAGE][INFO] - Starting run keyword runFeatureFile: 'Include/features/Add_Contact/DeleteContact.feature' and extract report to folder: '/Users/sebastiangilarranz/Katalon Studio/PCTE-Similar1/Reports/20210202_232734/Smoke/20210202_232734/cucumber_report/1612326548026'...
+
+2021-02-02 23:29:08 - [TEST_CASE][FAILED] - Start Test Case : SCENARIO Delete previously created contact: SCENARIO Delete previously created contact FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to verify object 'Object Repository/Page_Contactology - main/input_Delete_name3' is not present
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword.verifyElementNotPresent(VerifyElementNotPresentKeyword.groovy:117)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword.execute(VerifyElementNotPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementNotPresent(WebUiBuiltInKeywords.groovy:1494)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementNotPresent$5.call(Unknown Source)
+	at edu.ucf.irl.Add_Delete_Contact.verifyNoContact(Add_Delete_Contact.groovy:72)
+	at ✽.I should no longer see contact(/Users/sebastiangilarranz/Katalon Studio/PCTE-Similar1/Include/features/Add_Contact/DeleteContact.feature:7)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Page_Contactology - main/input_Delete_name3' located by 'By.xpath: //input[@id='name3']' is present after '5' second(s)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$stepFailed$0.call(Unknown Source)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword$_verifyElementNotPresent_closure1.doCall(VerifyElementNotPresentKeyword.groovy:106)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword$_verifyElementNotPresent_closure1.doCall(VerifyElementNotPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword.verifyElementNotPresent(VerifyElementNotPresentKeyword.groovy:117)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword.execute(VerifyElementNotPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementNotPresent(WebUiBuiltInKeywords.groovy:1494)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementNotPresent$5.call(Unknown Source)
+	at edu.ucf.irl.Add_Delete_Contact.verifyNoContact(Add_Delete_Contact.groovy:72)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:48)
+	at cucumber.runtime.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:55)
+	at cucumber.runner.TestStep.run(TestStep.java:42)
+	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:53)
+	at cucumber.runner.TestCase.run(TestCase.java:47)
+	at cucumber.runner.Runner.runPickle(Runner.java:44)
+	at cucumber.runtime.Runtime.runFeature(Runtime.java:120)
+	at cucumber.runtime.Runtime.run(Runtime.java:106)
+	at cucumber.api.cli.Main.run(Main.java:35)
+	at cucumber.api.cli.Main$run.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:106)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:73)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:246)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Add Contact_Delete Contact.run(Add Contact_Delete Contact:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:394)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:385)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:364)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:356)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1612326454146.run(TempTestSuite1612326454146.groovy:39)
+
+
+2021-02-02 23:29:08 - [TEST_STEP][PASSED] - I am on contactology: I am on contactology
+
+2021-02-02 23:29:08 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-02-02 23:29:08 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-02-02 23:29:09 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-02-02 23:29:12 - [MESSAGE][PASSED] - Navigate to 'https://contactology.pythonanywhere.com/' successfully
+
+2021-02-02 23:29:12 - [MESSAGE][PASSED] - I am on contactology
+
+2021-02-02 23:29:12 - [TEST_STEP][PASSED] - I login to contactology: I login to contactology
+
+2021-02-02 23:29:16 - [MESSAGE][PASSED] - Text 'User001' is set on object 'Object Repository/Page_Contactology - login/input_User Name_username'
+
+2021-02-02 23:29:18 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Contactology - login/input_Password_pass'
+
+2021-02-02 23:29:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Contactology - login/button_Login' is clicked on
+
+2021-02-02 23:29:20 - [MESSAGE][PASSED] - I login to contactology
+
+2021-02-02 23:29:20 - [TEST_STEP][PASSED] - I delete contact previously created: I delete contact previously created
+
+2021-02-02 23:29:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Contactology - main/button_Delete' is clicked on
+
+2021-02-02 23:29:22 - [MESSAGE][PASSED] - I delete contact previously created
+
+2021-02-02 23:29:22 - [TEST_STEP][FAILED] - I should no longer see contact: I should no longer see contact FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to verify object 'Object Repository/Page_Contactology - main/input_Delete_name3' is not present
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword.verifyElementNotPresent(VerifyElementNotPresentKeyword.groovy:117)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword.execute(VerifyElementNotPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementNotPresent(WebUiBuiltInKeywords.groovy:1494)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementNotPresent$5.call(Unknown Source)
+	at edu.ucf.irl.Add_Delete_Contact.verifyNoContact(Add_Delete_Contact.groovy:72)
+	at ✽.I should no longer see contact(/Users/sebastiangilarranz/Katalon Studio/PCTE-Similar1/Include/features/Add_Contact/DeleteContact.feature:7)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Page_Contactology - main/input_Delete_name3' located by 'By.xpath: //input[@id='name3']' is present after '5' second(s)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$stepFailed$0.call(Unknown Source)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword$_verifyElementNotPresent_closure1.doCall(VerifyElementNotPresentKeyword.groovy:106)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword$_verifyElementNotPresent_closure1.doCall(VerifyElementNotPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword.verifyElementNotPresent(VerifyElementNotPresentKeyword.groovy:117)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword.execute(VerifyElementNotPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementNotPresent(WebUiBuiltInKeywords.groovy:1494)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementNotPresent$5.call(Unknown Source)
+	at edu.ucf.irl.Add_Delete_Contact.verifyNoContact(Add_Delete_Contact.groovy:72)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:48)
+	at cucumber.runtime.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:55)
+	at cucumber.runner.TestStep.run(TestStep.java:42)
+	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:53)
+	at cucumber.runner.TestCase.run(TestCase.java:47)
+	at cucumber.runner.Runner.runPickle(Runner.java:44)
+	at cucumber.runtime.Runtime.runFeature(Runtime.java:120)
+	at cucumber.runtime.Runtime.run(Runtime.java:106)
+	at cucumber.api.cli.Main.run(Main.java:35)
+	at cucumber.api.cli.Main$run.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:106)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:73)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:246)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Add Contact_Delete Contact.run(Add Contact_Delete Contact:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:394)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:385)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:364)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:356)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1612326454146.run(TempTestSuite1612326454146.groovy:39)
+
+
+2021-02-02 23:29:28 - [MESSAGE][FAILED] - Web element with id: 'Object Repository/Page_Contactology - main/input_Delete_name3' located by 'By.xpath: //input[@id='name3']' is present after '5' second(s) (Root cause: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Page_Contactology - main/input_Delete_name3' located by 'By.xpath: //input[@id='name3']' is present after '5' second(s)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$stepFailed$0.call(Unknown Source)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword$_verifyElementNotPresent_closure1.doCall(VerifyElementNotPresentKeyword.groovy:106)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword$_verifyElementNotPresent_closure1.doCall(VerifyElementNotPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword.verifyElementNotPresent(VerifyElementNotPresentKeyword.groovy:117)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword.execute(VerifyElementNotPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementNotPresent(WebUiBuiltInKeywords.groovy:1494)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementNotPresent$5.call(Unknown Source)
+	at edu.ucf.irl.Add_Delete_Contact.verifyNoContact(Add_Delete_Contact.groovy:72)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:48)
+	at cucumber.runtime.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:55)
+	at cucumber.runner.TestStep.run(TestStep.java:42)
+	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:53)
+	at cucumber.runner.TestCase.run(TestCase.java:47)
+	at cucumber.runner.Runner.runPickle(Runner.java:44)
+	at cucumber.runtime.Runtime.runFeature(Runtime.java:120)
+	at cucumber.runtime.Runtime.run(Runtime.java:106)
+	at cucumber.api.cli.Main.run(Main.java:35)
+	at cucumber.api.cli.Main$run.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:106)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:73)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:246)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Add Contact_Delete Contact.run(Add Contact_Delete Contact:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:394)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:385)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:364)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:356)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1612326454146.run(TempTestSuite1612326454146.groovy:39)
+)
+
+2021-02-02 23:29:28 - [MESSAGE][FAILED] - Unable to verify object 'Object Repository/Page_Contactology - main/input_Delete_name3' is not present (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to verify object 'Object Repository/Page_Contactology - main/input_Delete_name3' is not present
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword.verifyElementNotPresent(VerifyElementNotPresentKeyword.groovy:117)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword.execute(VerifyElementNotPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementNotPresent(WebUiBuiltInKeywords.groovy:1494)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementNotPresent$5.call(Unknown Source)
+	at edu.ucf.irl.Add_Delete_Contact.verifyNoContact(Add_Delete_Contact.groovy:72)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:48)
+	at cucumber.runtime.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:55)
+	at cucumber.runner.TestStep.run(TestStep.java:42)
+	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:53)
+	at cucumber.runner.TestCase.run(TestCase.java:47)
+	at cucumber.runner.Runner.runPickle(Runner.java:44)
+	at cucumber.runtime.Runtime.runFeature(Runtime.java:120)
+	at cucumber.runtime.Runtime.run(Runtime.java:106)
+	at cucumber.api.cli.Main.run(Main.java:35)
+	at cucumber.api.cli.Main$run.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:106)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:73)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:246)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Add Contact_Delete Contact.run(Add Contact_Delete Contact:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:394)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:385)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:364)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:356)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1612326454146.run(TempTestSuite1612326454146.groovy:39)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Page_Contactology - main/input_Delete_name3' located by 'By.xpath: //input[@id='name3']' is present after '5' second(s)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$stepFailed$0.call(Unknown Source)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword$_verifyElementNotPresent_closure1.doCall(VerifyElementNotPresentKeyword.groovy:106)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword$_verifyElementNotPresent_closure1.doCall(VerifyElementNotPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 43 more
+)
+
+2021-02-02 23:29:28 - [MESSAGE][FAILED] - I should no longer see contact FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to verify object 'Object Repository/Page_Contactology - main/input_Delete_name3' is not present
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword.verifyElementNotPresent(VerifyElementNotPresentKeyword.groovy:117)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword.execute(VerifyElementNotPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementNotPresent(WebUiBuiltInKeywords.groovy:1494)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementNotPresent$5.call(Unknown Source)
+	at edu.ucf.irl.Add_Delete_Contact.verifyNoContact(Add_Delete_Contact.groovy:72)
+	at ✽.I should no longer see contact(/Users/sebastiangilarranz/Katalon Studio/PCTE-Similar1/Include/features/Add_Contact/DeleteContact.feature:7)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Page_Contactology - main/input_Delete_name3' located by 'By.xpath: //input[@id='name3']' is present after '5' second(s)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$stepFailed$0.call(Unknown Source)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword$_verifyElementNotPresent_closure1.doCall(VerifyElementNotPresentKeyword.groovy:106)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword$_verifyElementNotPresent_closure1.doCall(VerifyElementNotPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword.verifyElementNotPresent(VerifyElementNotPresentKeyword.groovy:117)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword.execute(VerifyElementNotPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementNotPresent(WebUiBuiltInKeywords.groovy:1494)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementNotPresent$5.call(Unknown Source)
+	at edu.ucf.irl.Add_Delete_Contact.verifyNoContact(Add_Delete_Contact.groovy:72)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:48)
+	at cucumber.runtime.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:55)
+	at cucumber.runner.TestStep.run(TestStep.java:42)
+	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:53)
+	at cucumber.runner.TestCase.run(TestCase.java:47)
+	at cucumber.runner.Runner.runPickle(Runner.java:44)
+	at cucumber.runtime.Runtime.runFeature(Runtime.java:120)
+	at cucumber.runtime.Runtime.run(Runtime.java:106)
+	at cucumber.api.cli.Main.run(Main.java:35)
+	at cucumber.api.cli.Main$run.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:106)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:73)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:246)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Add Contact_Delete Contact.run(Add Contact_Delete Contact:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:394)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:385)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:364)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:356)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1612326454146.run(TempTestSuite1612326454146.groovy:39)
+
+
+2021-02-02 23:29:28 - [MESSAGE][FAILED] - Feature file 'Include/features/Add_Contact/DeleteContact.feature' was failed
+
+2021-02-02 23:29:28 - [MESSAGE][FAILED] - Keyword runFeatureFile was failed (Root cause: com.kms.katalon.core.exception.StepFailedException: Feature file 'Include/features/Add_Contact/DeleteContact.feature' was failed
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:23)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$stepFailed$0.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:112)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:73)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:246)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Add Contact_Delete Contact.run(Add Contact_Delete Contact:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:394)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:385)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:364)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:356)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1612326454146.run(TempTestSuite1612326454146.groovy:39)
+)]]></system-out>
+         <system-err><![CDATA[2021-02-02 23:28:30 - [TEST_CASE][FAILED] - Test Cases/Add Contact_Delete Contact: Test Cases/Add Contact_Delete Contact FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Feature file 'Include/features/Add_Contact/DeleteContact.feature' was failed
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:23)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$stepFailed$0.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:112)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:73)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:246)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Add Contact_Delete Contact.run(Add Contact_Delete Contact:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:394)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:385)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:364)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:356)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1612326454146.run(TempTestSuite1612326454146.groovy:39)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Verify Existing Contacts" time="11.913" classname="Test Cases/Verify Existing Contacts" status="PASSED">
+         <system-out><![CDATA[2021-02-02 23:29:28 - [TEST_CASE][PASSED] - Test Cases/Verify Existing Contacts: Test Cases/Verify Existing Contacts
+
+2021-02-02 23:29:29 - [TEST_STEP][PASSED] - runFeatureFile("Include/features/VerifyContacts/VerifyContacts.feature"): Feature file: 'Include/features/VerifyContacts/VerifyContacts.feature' was passed
+
+2021-02-02 23:29:29 - [MESSAGE][INFO] - Starting run keyword runFeatureFile: 'Include/features/VerifyContacts/VerifyContacts.feature' and extract report to folder: '/Users/sebastiangilarranz/Katalon Studio/PCTE-Similar1/Reports/20210202_232734/Smoke/20210202_232734/cucumber_report/1612326569220'...
+
+2021-02-02 23:29:29 - [TEST_CASE][PASSED] - Start Test Case : SCENARIO Verify Contacts: SCENARIO Verify Contacts
+
+2021-02-02 23:29:29 - [TEST_STEP][PASSED] - I am on contactology: I am on contactology
+
+2021-02-02 23:29:29 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2021-02-02 23:29:29 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-02-02 23:29:29 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-02-02 23:29:30 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-02-02 23:29:31 - [MESSAGE][PASSED] - Navigate to 'https://contactology.pythonanywhere.com/' successfully
+
+2021-02-02 23:29:31 - [MESSAGE][PASSED] - I am on contactology
+
+2021-02-02 23:29:31 - [TEST_STEP][PASSED] - I login to contactology: I login to contactology
+
+2021-02-02 23:29:32 - [MESSAGE][PASSED] - Text 'User001' is set on object 'Object Repository/Page_Contactology - login/input_User Name_username'
+
+2021-02-02 23:29:32 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Contactology - login/input_Password_pass'
+
+2021-02-02 23:29:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Contactology - login/button_Login' is clicked on
+
+2021-02-02 23:29:34 - [MESSAGE][PASSED] - I login to contactology
+
+2021-02-02 23:29:34 - [TEST_STEP][PASSED] - I should see existing contacts: I should see existing contacts
+
+2021-02-02 23:29:36 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Contactology - main/input_Search_name0' is present
+
+2021-02-02 23:29:38 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Contactology - main/input_Delete_name1' is present
+
+2021-02-02 23:29:40 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Contactology - main/input_Delete_name2' is present
+
+2021-02-02 23:29:40 - [MESSAGE][PASSED] - I should see existing contacts
+
+2021-02-02 23:29:40 - [MESSAGE][PASSED] - Feature file: 'Include/features/VerifyContacts/VerifyContacts.feature' was passed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-02-02 23:27:48 - [TEST_SUITE][FAILED] - Smoke: Test Cases/Add Contact_Delete Contact FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Feature file 'Include/features/Add_Contact/DeleteContact.feature' was failed
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:23)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$stepFailed$0.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:112)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:73)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:246)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Add Contact_Delete Contact.run(Add Contact_Delete Contact:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:394)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:385)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:364)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:356)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1612326454146.run(TempTestSuite1612326454146.groovy:39)]]></system-out>
+      <system-err><![CDATA[2021-02-02 23:27:48 - [TEST_SUITE][FAILED] - Smoke: Test Cases/Add Contact_Delete Contact FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Feature file 'Include/features/Add_Contact/DeleteContact.feature' was failed
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:23)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$stepFailed$0.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:112)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:73)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:246)
+	at com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)
+	at Add Contact_Delete Contact.run(Add Contact_Delete Contact:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:394)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:385)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:364)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:356)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1612326454146.run(TempTestSuite1612326454146.groovy:39)]]></system-err>
+   </testsuite>
+</testsuites>

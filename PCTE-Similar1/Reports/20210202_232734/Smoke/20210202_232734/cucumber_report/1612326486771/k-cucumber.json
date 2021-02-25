@@ -1,0 +1,126 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "BDD_TESTRUN_UUID": "d5ef6a29-4648-4aef-8430-04585bf81e4f",
+        "line": 3,
+        "name": "Login",
+        "description": "",
+        "id": "login-to-contactology;login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4111120038,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on contactology",
+            "match": {
+              "location": "Login.goToWebsite()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "34815b35-d7b3-42a4-a1d0-fe6290801ba6"
+          },
+          {
+            "result": {
+              "duration": 1539288654,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I login to contactology",
+            "match": {
+              "location": "Login.loginToWebsite()"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "25fe5360-8473-46da-b36e-30a68569533a"
+          },
+          {
+            "result": {
+              "duration": 3365297360,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I should have access to dashboard",
+            "match": {
+              "location": "Login.confirmDashboard()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "d74f426b-873e-4c50-82d9-d5ceeeab499f"
+          }
+        ]
+      },
+      {
+        "BDD_TESTRUN_UUID": "54069671-1d7d-4bce-a040-4566b1aa6a23",
+        "line": 8,
+        "name": "Logout",
+        "description": "",
+        "id": "login-to-contactology;logout",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9700450452,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on contactology",
+            "match": {
+              "location": "Login.goToWebsite()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "c5b7c283-fda3-4891-ad07-39c28061334e"
+          },
+          {
+            "result": {
+              "duration": 1288962038,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I login to contactology",
+            "match": {
+              "location": "Login.loginToWebsite()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "d11bda9a-9399-4b45-8ebf-715095deb55f"
+          },
+          {
+            "result": {
+              "duration": 2690748327,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I logout of contactology",
+            "match": {
+              "location": "Login.logout()"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "be73d132-c311-4bcd-aa92-b2f776ed93ef"
+          },
+          {
+            "result": {
+              "duration": 586478225,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I should no longer have access to dashboard",
+            "match": {
+              "location": "Login.confirmLogout()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "a4b421ec-a5a0-4820-aebd-146e04be825d"
+          }
+        ]
+      }
+    ],
+    "name": "Login to Contactology",
+    "description": "",
+    "id": "login-to-contactology",
+    "keyword": "Feature",
+    "uri": "/Users/sebastiangilarranz/Katalon Studio/PCTE-Similar1/Include/features/login/Login-success.feature",
+    "tags": []
+  }
+]

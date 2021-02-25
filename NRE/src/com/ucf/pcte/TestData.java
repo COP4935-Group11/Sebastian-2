@@ -3,6 +3,7 @@ package com.ucf.pcte;
 import java.io.FileReader;
 import java.util.List;
 
+import com.configuration.RunConfiguration;
 import com.constants.StringConstants;
 import com.opencsv.CSVParser;
 import com.opencsv.CSVParserBuilder;
@@ -11,7 +12,6 @@ import com.opencsv.CSVReaderBuilder;
 
 
 public class TestData {
-	
 	String type = null;
 	String path = null;
 	String seperator = null;
@@ -34,7 +34,7 @@ public class TestData {
 		
 		if(isInternal == true)
 		{
-			path = StringConstants.PROJECT_DIR + StringConstants.ID_SEPARATOR + path;
+			path = RunConfiguration.getProjectDir() + StringConstants.ID_SEPARATOR + path;
 		}
 		
 		switch (type)
@@ -57,7 +57,7 @@ public class TestData {
 		
 		if(isInternal == true)
 		{
-			path = StringConstants.PROJECT_DIR + StringConstants.ID_SEPARATOR + path;
+			path = RunConfiguration.getProjectDir() + StringConstants.ID_SEPARATOR + path;
 		}
 		
 		switch (type)

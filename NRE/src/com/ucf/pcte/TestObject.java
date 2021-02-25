@@ -4,6 +4,7 @@ import java.io.File;
 import javax.xml.parsers.*;
 import org.w3c.dom.*;
 
+import com.configuration.RunConfiguration;
 import com.constants.StringConstants;
 
 
@@ -16,7 +17,8 @@ public class TestObject {
 		{
 			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder builder = factory.newDocumentBuilder();
-			Document document = builder.parse(new File(StringConstants.PROJECT_DIR + "/" + location + ".rs"));
+			Document document = builder.parse(new File(RunConfiguration.getProjectDir() + StringConstants.ID_SEPARATOR 
+												+ location + StringConstants.OBJECTS_EXT));
 			document.getDocumentElement().normalize();
 			Element root = document.getDocumentElement();
 			NodeList nList = document.getElementsByTagName("selectorCollection");
@@ -47,7 +49,8 @@ public class TestObject {
 		{
 			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder builder = factory.newDocumentBuilder();
-			Document document = builder.parse(new File(StringConstants.PROJECT_DIR + "/" + location + ".rs"));
+			Document document = builder.parse(new File(RunConfiguration.getProjectDir()+ StringConstants.ID_SEPARATOR 
+														+ location + StringConstants.OBJECTS_EXT));
 			document.getDocumentElement().normalize();
 			Element root = document.getDocumentElement();
 			NodeList nList = document.getElementsByTagName("selectorCollection");

@@ -1,0 +1,76 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "BDD_TESTRUN_UUID": "3e514f86-b613-4439-91f7-750388508e50",
+        "line": 3,
+        "name": "Delete previously created contact",
+        "description": "",
+        "id": "delete-contact;delete-previously-created-contact",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2701423078,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on contactology",
+            "match": {
+              "location": "Login.goToWebsite()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "ae542f1d-0607-4e44-9fe1-fa09971f5671"
+          },
+          {
+            "result": {
+              "duration": 1724501587,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I login to contactology",
+            "match": {
+              "location": "Login.loginToWebsite()"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "e335305e-600a-4149-8c9c-64484c746aa6"
+          },
+          {
+            "result": {
+              "duration": 1528125324,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I delete contact previously created",
+            "match": {
+              "location": "Add_Delete_Contact.deleteContact()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "b4b1d39a-8c42-469a-907b-8ff1748c8743"
+          },
+          {
+            "result": {
+              "duration": 1198102105,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I should no longer see contact",
+            "match": {
+              "location": "Add_Delete_Contact.verifyNoContact()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "03af7776-100e-435e-8f12-9cc87265b483"
+          }
+        ]
+      }
+    ],
+    "name": "Delete Contact",
+    "description": "",
+    "id": "delete-contact",
+    "keyword": "Feature",
+    "uri": "/Users/sebastiangilarranz/Katalon Studio/PCTE-Similar1/Include/features/Add_Contact/DeleteContact.feature",
+    "tags": []
+  }
+]

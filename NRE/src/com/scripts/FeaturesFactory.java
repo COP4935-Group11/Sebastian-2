@@ -8,6 +8,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 
+import com.configuration.RunConfiguration;
 import com.constants.StringConstants;
 
 public class FeaturesFactory {
@@ -34,7 +35,9 @@ public class FeaturesFactory {
 
 		ArrayList<File> features = new ArrayList<>();
 
-		String folder = StringConstants.FEATURES_SOURCE;
+		String folder = RunConfiguration.getProjectDir().concat(StringConstants.ID_SEPARATOR).
+				concat(StringConstants.FEATURES_SOURCE).concat(StringConstants.ID_SEPARATOR);
+		//System.out.println(folder);
 		File rootFolder = new File(folder);
 
 		for(File featureFolder : rootFolder.listFiles()) {
@@ -60,10 +63,13 @@ public class FeaturesFactory {
 		ArrayList<String> fileContent = new ArrayList<String>(Files.readAllLines(Paths.get(rootScript.toURI()), StandardCharsets.UTF_8));
 		sourceCode = String.join(StringConstants.NEW_LINE, fileContent);
 
-		new File(StringConstants.FEATURES_FOLDER).mkdirs();
+		new File(StringConstants.ROOT_DIR + StringConstants.ID_SEPARATOR + 
+				StringConstants.FEATURES_FOLDER).mkdirs();
 		
-		Path targetPath = Paths.get(new File(StringConstants.FEATURES_FOLDER+StringConstants.ID_SEPARATOR+rootScript.getName()).getAbsolutePath());
-		Files.writeString(targetPath, sourceCode, StandardCharsets.UTF_8);
+		Path targetPath = Paths.get(new File(StringConstants.ROOT_DIR + StringConstants.ID_SEPARATOR + 
+											StringConstants.FEATURES_FOLDER + StringConstants.ID_SEPARATOR + 
+											rootScript.getName()).getAbsolutePath());
+		Files.writeString(targetPath, sourceCode, StringConstants.STANDARD_CHARSET);
 		
 		return new File(targetPath.toAbsolutePath().toString());	
 

@@ -1,0 +1,63 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "BDD_TESTRUN_UUID": "e6e18bb8-294e-4fde-81bb-0a9106bcb3a5",
+        "line": 3,
+        "name": "Register",
+        "description": "",
+        "id": "register-to-contactology;register",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13970070318,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on contactology",
+            "match": {
+              "location": "Login.goToWebsite()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "030e4b4c-fd3a-4422-92be-dd49c54bcf4f"
+          },
+          {
+            "result": {
+              "duration": 5077511273,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I register to contactology",
+            "match": {
+              "location": "Register.IRegister()"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "e7275359-3aea-4d33-93da-b287af020007"
+          },
+          {
+            "result": {
+              "duration": 1191899365,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I should have access to dashboard",
+            "match": {
+              "location": "Login.confirmDashboard()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "f3e029de-7055-4c7e-814c-80bc68bae0fb"
+          }
+        ]
+      }
+    ],
+    "name": "Register to Contactology",
+    "description": "",
+    "id": "register-to-contactology",
+    "keyword": "Feature",
+    "uri": "/Users/sebastiangilarranz/Katalon Studio/PCTE-Similar1/Include/features/Register/Register-success.feature",
+    "tags": []
+  }
+]

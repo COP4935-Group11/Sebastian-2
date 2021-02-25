@@ -1,7 +1,7 @@
 package internal
+
 import com.kms.katalon.core.configuration.RunConfiguration
-import com.ucf.pcte.Webui as WebUI
-import com.ucf.pcte.CucumberKW
+import com.kms.katalon.core.main.TestCaseMain
 
 
 /**
@@ -17,14 +17,14 @@ public class GlobalVariable {
 
     static {
         try {
-//            def selectedVariables = TestCaseMain.getGlobalVariables("default")
-//			selectedVariables += TestCaseMain.getGlobalVariables(RunConfiguration.getExecutionProfile())
-//            selectedVariables += RunConfiguration.getOverridingParameters()
+            def selectedVariables = TestCaseMain.getGlobalVariables("default")
+			selectedVariables += TestCaseMain.getGlobalVariables(RunConfiguration.getExecutionProfile())
+            selectedVariables += RunConfiguration.getOverridingParameters()
     
-            url = "https://google.com"
+            url = selectedVariables['url']
             
         } catch (Exception e) {
-            e.printStackTrace
+            TestCaseMain.logGlobalVariableError(e)
         }
     }
 }

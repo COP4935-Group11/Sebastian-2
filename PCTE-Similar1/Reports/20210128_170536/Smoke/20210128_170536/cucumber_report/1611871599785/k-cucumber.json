@@ -1,0 +1,63 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "BDD_TESTRUN_UUID": "857415d8-1f23-468d-b164-6067b00d90c3",
+        "line": 3,
+        "name": "Verify Contacts",
+        "description": "",
+        "id": "verifycontacts-using-user001;verify-contacts",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3330757557,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on contactology",
+            "match": {
+              "location": "Login.goToWebsite()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "a68629a6-8e7b-4413-97d6-de907771fa32"
+          },
+          {
+            "result": {
+              "duration": 1658884157,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I login to contactology",
+            "match": {
+              "location": "Login.loginToWebsite()"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "2c6a7af3-97a6-4c32-a605-26ac02589d8c"
+          },
+          {
+            "result": {
+              "duration": 1783095863,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I should see existing contacts",
+            "match": {
+              "location": "VerifyContacts.verifyContacts()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "4e3fc7f8-3d6c-4138-81cb-7bbc40e416a9"
+          }
+        ]
+      }
+    ],
+    "name": "VerifyContacts using User001",
+    "description": "",
+    "id": "verifycontacts-using-user001",
+    "keyword": "Feature",
+    "uri": "/Users/sebastiangilarranz/Katalon Studio/PCTE-Similar1/Include/features/VerifyContacts/VerifyContacts.feature",
+    "tags": []
+  }
+]

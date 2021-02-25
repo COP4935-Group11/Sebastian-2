@@ -7,14 +7,18 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
 
-import org.apache.commons.io.FileUtils;
 import org.codehaus.groovy.control.CompilationUnit;
 import org.codehaus.groovy.control.Phases;
 import org.codehaus.groovy.tools.GroovyClass;
 
+import com.configuration.RunConfiguration;
 import com.constants.StringConstants;
-import console.RunConsole;
+
+import com.console.Main;
 import groovy.lang.GroovyClassLoader;
 
 
@@ -25,7 +29,19 @@ public class StepDefinitionsFactory {
 
 	private static ArrayList<File> listOfScripts = null;
 	public static ArrayList<File> listOfSteps = null;
+		
+	private static ArrayList<String> imports = new ArrayList<>( 
+            		Arrays.asList(StringConstants.IMPORTS));;
 
+//	private static ArrayList<String> imports = new ArrayList<>( 
+//			List.of(StringConstants.DEFAULT_SCRIPTS_PACKAGE,
+//					"import com.ucf.pcte.CucumberKW", 
+//					"import com.ucf.pcte.gold.WebUI as WebUI", 
+//					"import static com.ucf.pcte.gold.WebUI.findTestObject",
+//					"import cucumber.api.java.en.*",
+//					"import com.kms.katalon.core.testdata.CSVData",
+//					"import com.kms.katalon.core.testdata.reader.CSVSeparator",
+//					"import com.configuration.RunConfiguration"));;
 
 	
 	public static void copyScripts() throws IllegalAccessException, InstantiationException, 
@@ -49,9 +65,12 @@ public class StepDefinitionsFactory {
 
 			listOfSteps.add(i, getScript(listOfScripts.get(i)));
 			
-			className = listOfSteps.get(i).getName().replace(StringConstants.GROOVY_EXT, "");
+			className = StringConstants.STEP_DEFS_GLUE + "." + listOfSteps.get(i).getName().replace(StringConstants.GROOVY_EXT, "");
+			
 			
 			scriptSource = String.join(StringConstants.NEW_LINE ,readLines(listOfSteps.get(i)));
+			
+			//System.out.println(scriptSource);
 			
 			 compileGroovyScript(className, scriptSource);
 										
@@ -66,7 +85,7 @@ public class StepDefinitionsFactory {
 
 		ArrayList<File> scripts = new ArrayList<>();
 
-		String folder = StringConstants.SCRIPTS_SOURCE;
+		String folder = RunConfiguration.getProjectDir() + StringConstants.SCRIPTS_SOURCE;
 		File fld = new File(folder);
 
 		//System.out.println(fld.toString()); //debugging mode
@@ -77,7 +96,6 @@ public class StepDefinitionsFactory {
 
 			for(File file : ls) {
 
-
 				if(!file.getName().contains(StringConstants.CUSTOM_ATTRIBUTES_FILE))
 					if(!file.isDirectory()) {
 						scripts.add(file);
@@ -85,7 +103,6 @@ public class StepDefinitionsFactory {
 					}
 					else
 						fld = file;
-
 			}
 
 		}
@@ -96,24 +113,34 @@ public class StepDefinitionsFactory {
 	static File getScript(File rootScript) throws IOException {
 
 		String sourceCode= null;
-
-
+		
 		ArrayList<String> fileContent = readLines(rootScript);
+		ArrayList<String> script = new ArrayList<>();
+					
 		
-		//fileContent.remove(0);
-		fileContent.set(0, StringConstants.DEFAULT_SCRIPTS_PACKAGE);
-		sourceCode = String.join("\n", fileContent);
+		Iterator<String> iter = fileContent.iterator();
+		while (iter.hasNext()) {
+		  String line = iter.next();
+		  if (line.contains("import") || line.contains("package")) iter.remove();
+		}
 		
-		new File(StringConstants.SCRIPTS_FOLDER).mkdirs();
+		script.addAll(imports);
+		script.addAll(fileContent);
+							
+		sourceCode = String.join(StringConstants.NEW_LINE, script);
+		
+			
+		new File(StringConstants.ROOT_DIR + StringConstants.ID_SEPARATOR + StringConstants.SCRIPTS_FOLDER).mkdirs();
 
-		Path targetPath = Paths.get(new File(StringConstants.SCRIPTS_FOLDER + StringConstants.ID_SEPARATOR + rootScript.getName()).getAbsolutePath());
+		Path targetPath = Paths.get(new File(StringConstants.ROOT_DIR + StringConstants.ID_SEPARATOR + StringConstants.SCRIPTS_FOLDER 
+											+ StringConstants.ID_SEPARATOR + rootScript.getName()).getAbsolutePath());
 		Files.writeString(targetPath, sourceCode, StringConstants.STANDARD_CHARSET);
 		
 		
 		File filee = new File(targetPath.toAbsolutePath().toString());
-		System.out.println(filee);
+		//System.out.println(filee);
 		
-		ImportFactory.removeAndAdd(filee);
+		//ImportFactory.removeAndAdd(filee);
 
 		return 	filee;
 	}
@@ -132,10 +159,9 @@ public class StepDefinitionsFactory {
 	public static void compileGroovyScript(final String className, final String script) {
 	    //byte[] compiledScriptBytes = null;
 		CompilationUnit compileUnit = new CompilationUnit();
-	    
-	    
+	    			    
 	    compileUnit.addSource(className, script);
-	    compileUnit.compile(Phases.ALL);
+	    compileUnit.compile(Phases.OUTPUT);
 
 	    for (Object compileClass : compileUnit.getClasses()) {
 	        GroovyClass groovyClass = (GroovyClass) compileClass;
@@ -148,10 +174,9 @@ public class StepDefinitionsFactory {
 	public static Class getGroovyScript(final String className, String script) {
 	    Class clazz = null;
 
-	    try (GroovyClassLoader classLoader = new GroovyClassLoader(RunConsole.rootClassLoader)) {
+	    try (GroovyClassLoader classLoader = new GroovyClassLoader(Main.getRootClassLoader())) {
 	        clazz = classLoader.parseClass(script, className);
-	                
-	          
+	                	          
 	        //classLoader.addClasspath(className);
 	        
 	        
@@ -164,14 +189,5 @@ public class StepDefinitionsFactory {
 	}
 	
 	
-	public static void copyDirectory(String sourceDirectoryLocation, String destinationDirectoryLocation) throws IOException {
-	    File sourceDirectory = new File(sourceDirectoryLocation);
-	    File destinationDirectory = new File(destinationDirectoryLocation);
-	    FileUtils.copyDirectory(sourceDirectory, destinationDirectory);
-	}
-	
-	public static void deleteDirectory(String dir) throws IOException {
-		FileUtils.deleteDirectory(new File(dir));
-	}
 
 }

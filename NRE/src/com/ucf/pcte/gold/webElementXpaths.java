@@ -2,6 +2,7 @@ package com.ucf.pcte.gold;
 
 import java.util.*;
 
+@SuppressWarnings("unused")
 public class webElementXpaths
 {
     //no main function this is just supposed to be a data storage system

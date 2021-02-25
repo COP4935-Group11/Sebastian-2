@@ -7,12 +7,12 @@ import org.openqa.selenium.WebElement
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.firefox.FirefoxDriver
+import org.openqa.selenium.firefox.FirefoxOptions
 import org.openqa.selenium.NoSuchElementException
 // Cuno: Haven't implemented TimeoutException, but should consider it for error control. 
 // Maybe continuing past some function errors? Maybe for the runtime engine running Test Suites to continue past failed Test Cases.
 import org.openqa.selenium.TimeoutException
 import org.openqa.selenium.support.ui.WebDriverWait
-import org.testng.Assert
 import org.openqa.selenium.support.ui.FluentWait
 import org.openqa.selenium.support.ui.ExpectedConditions
 
@@ -28,7 +28,9 @@ import javax.xml.bind.DatatypeConverter
 
 import com.ucf.pcte.Webui
 import com.ucf.pcte.gold.*
-import console.RunConsole
+import com.configuration.RunConfiguration
+import com.constants.StringConstants
+import com.driver.DriverFactory
 
 
 
@@ -39,39 +41,24 @@ public class WebUI
 	static ThreadLocal<WebDriver> threadLocal = null;
 	
 	private WebDriver driver;
+	private static String browser = RunConfiguration.getBrowser();
 	static Webui open;
 
-	public static void openBrowser(String browser) 
+	public static void openBrowser(String url) 
 	{
 		threadLocal = new ThreadLocal<WebDriver>()
 		WebDriver webDriver = null;
 		
+		webDriver = DriverFactory.getDriver(browser)
+		threadLocal.set(webDriver);
 		
-		switch(RunConsole.browser) 
-		{
-			case "F":
-//				System.setProperty("webdriver.gecko.driver", "./" + "\\geckodriver.exe")
-				webDriver = new FirefoxDriver()
-				threadLocal.set(webDriver);
-				break
-			case "C":
-//				System.setProperty("webdriver.chrome.driver", "./" + "\\chromedriver.exe")
-				webDriver = new ChromeDriver()
-				threadLocal.set(webDriver);
-				break
-			case "":
-			default:
-//				System.setProperty("webdriver.chrome.driver", "./" + "\\geckodriver.exe")
-				webDriver = new FirefoxDriver()
-				threadLocal.set(webDriver);
-				break
-		}
+		
 	}
 	
 	public static TestObject findTestObject(String path)
 	{
-		String userPath = RunConsole.project + "/";
-		String rs = ".rs";
+		String userPath = RunConfiguration.getProjectDir()+ StringConstants.ID_SEPARATOR;
+		String rs = StringConstants.OBJECTS_EXT;
 		
 		if(!path.contains("Object Repository/"))
 			path = "Object Repository/" + path;
@@ -302,7 +289,7 @@ public class WebUI
 		}
 		catch(TimeoutException)
 		{
-			Assert.fail("Could not verify Element Text.")
+			return false;
 		}
 	}
 
